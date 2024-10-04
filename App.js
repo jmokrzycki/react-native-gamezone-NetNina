@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import Navigator from "./routes/homeStack";
+// import Navigator from "./routes/homeStack";
+import Navigator from "./routes/drawer";
+import "react-native-gesture-handler";
 
 const getFonts = () => {
   return Font.loadAsync({
@@ -23,7 +25,6 @@ export default function App() {
         console.warn(e);
       }
     }
-
     loadFonts();
   }, []);
 
